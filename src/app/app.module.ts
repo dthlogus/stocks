@@ -8,6 +8,8 @@ import { SummaryComponent } from './components/summary/summary.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageComponent } from './components/manage/manage.component';
 import {FormsModule} from "@angular/forms";
+import {AppRoutes} from "./app.routes";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {FormsModule} from "@angular/forms";
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule,
+    AppRoutes
   ],
   providers: [
     StocksService
